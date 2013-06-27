@@ -12,7 +12,7 @@ from .steps import steps_nav
 def by_user_view(request):
     return render(request, 'myusage/by_user.html', {
         "main_nav": main_nav(request.user, 'staff_view'),
-        "tasks_nav": tasks_nav(request.user, 'publish'),
+        "tasks_nav": tasks_nav(request.user, 'usage'),
         "steps_nav": steps_nav(request.user, 'by_user')
     })
 

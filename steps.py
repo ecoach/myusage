@@ -1,7 +1,6 @@
 from django.core.urlresolvers import reverse
 
 def steps_nav(user, selected):
-    
     all_steps = [
             #'text'         
             #   'styling_class(es)',    
