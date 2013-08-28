@@ -10,9 +10,10 @@ urlpatterns = patterns('',
     # admin
     #url(r'^admin/', include(admin.site.urls)),
 
-    # publisher urls
-    url(r'^by_user/', login_required(by_user_view), name='by_user'),
-    url(r'^', login_required(by_user_view), name='default'),
+    # staff app
+    url(r'^your_tail/', login_required(your_tail_view), name='your_tail'),
+    url(r'^everyone_tail/', login_required(everyone_tail_view), name='everyone_tail'),
+    url(r'^', login_required(your_tail_view), name='default'),
 
 )
 

@@ -7,12 +7,17 @@ def steps_nav(user, selected):
             #       'links_to'
             #           'permission_required'
             #               'selected'
-            ['1. By User', 
+            ['Your Tail', 
                 '',  
-                    reverse('myusage:by_user'),
+                    reverse('myusage:your_tail'),
                         'staff',
-                            'by_user',
-
+                            'your_tail'
+            ],
+            ["Everyone's Tail", 
+                '',  
+                    reverse('myusage:everyone_tail'),
+                        'staff',
+                            'eveyone_tail'
             ]
         ]
 
