@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     # staff app
     url(r'^your_tail/', login_required(your_tail_view), name='your_tail'),
     url(r'^everyone_tail/', login_required(everyone_tail_view), name='everyone_tail'),
+    url(r'^usage_vector/', login_required(usage_vector_view), name='usage_vector'),
     url(r'^', login_required(your_tail_view), name='default'),
 
 )

@@ -18,6 +18,12 @@ def steps_nav(user, selected):
                     reverse('myusage:everyone_tail'),
                         'staff',
                             'eveyone_tail'
+            ],
+            ["Usage Vectors", 
+                '',  
+                    reverse('myusage:usage_vector'),
+                        'staff',
+                            'usage_vector'
             ]
         ]
 
